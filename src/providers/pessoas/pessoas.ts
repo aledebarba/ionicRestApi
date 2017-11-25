@@ -12,6 +12,8 @@ export class PessoasProvider {
     console.log('Hello PessoasProvider Provider');
   }
 
+  //~====================
+
   public load()
   {
     if (this.pessoas){
@@ -26,5 +28,19 @@ export class PessoasProvider {
       });
     });
   }
+
+  //====================
+
+  public loadByEmail(email:string): any
+  {
+      for(let pessoa of this.pessoas)
+      {
+        if (pessoa.email == email)
+        {
+          return pessoa;
+        }
+      }
+  }
+
 
 }

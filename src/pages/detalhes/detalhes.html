@@ -14,5 +14,12 @@
 
 
 <ion-content padding>
-
+  <ion-avatar item-center>
+    <img src="{{pessoa.picture.large}}">
+  </ion-avatar>
+  <h2>{{pessoa.name.first}} {{pessoa.name.last}}></h2>
+  <p>{{pessoa.gender}}</p>
+  <p>{{pessoa.location.street}}</p>
+  <p> {{pessoa.location.city}}<p>
+  <p style="color: #ff00ff">{{email}}</p>
 </ion-content>

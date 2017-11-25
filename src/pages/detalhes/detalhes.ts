@@ -15,7 +15,12 @@ import { IonicPage, NavController, NavParams } from 'ionic-angular';
 })
 export class DetalhesPage {
 
+  public email: string;
+
   constructor(public navCtrl: NavController, public navParams: NavParams) {
+
+    this.email = navParams.get("email");
+    
   }
 
   ionViewDidLoad() {
